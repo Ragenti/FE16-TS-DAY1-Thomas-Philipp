@@ -53,5 +53,11 @@ arrayOfStrings.forEach(function (value, index) {
 });
 const food = [{ name: "Water", quantity: 1, unit: "Liters" }, { name: "Flour", quantity: 0.5, unit: "Kg" }, { name: "Salt", quantity: 2, unit: "Teaspoons" }];
 food.forEach(dish => {
-    document.querySelector(".custom-content").innerHTML;
+    document.querySelector(".custom-content").innerHTML +=
+        `
+  <hr>
+  <div class="col-6">Name: ${dish.name}</div>  
+  <div class="col-6">Quantity: ${dish.quantity} ${dish.unit}</div>  
+  <hr class="mt-2">
+  `;
 });
