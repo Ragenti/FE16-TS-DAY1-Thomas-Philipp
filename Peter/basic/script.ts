@@ -31,29 +31,39 @@
 // }
 
 // Basic 2
-const nameArray: Array<string> =["Peter", "Aigner"];
-const domElement1 =(document.querySelector(".basic-ex2") as HTMLElement);
-// domElement1.innerHTML = nameArray[0] + " " + nameArray[1];
-const nameArray2: Array<string> =[];
-const nameArray3: Array<string> =[];
+// const nameArray: Array<string> =["Peter", "Aigner"];
+// const domElement1 =(document.querySelector(".basic-ex2") as HTMLElement);
+// // domElement1.innerHTML = nameArray[0] + " " + nameArray[1];
+// const nameArray2: Array<string> =[];
+// const nameArray3: Array<string> =[];
 
-for (let i=0; i<10;i++){
-    nameArray2.push("Peter")
-}
+// for (let i=0; i<10;i++){
+//     nameArray2.push("Peter")
+// }
 
-for (let i=0;i<10;i++){
-    nameArray3.push("Aigner")
-}
+// for (let i=0;i<10;i++){
+//     nameArray3.push("Aigner")
+// }
 
 
 
-setTimeout(() => {
-    nameArray3.forEach(function(value){
-        domElement1.innerHTML += `${value}<br>`
-    })
-},2000)
+// setTimeout(() => {
+//     nameArray3.forEach(function(value){
+//         domElement1.innerHTML += `${value}<br>`
+//     })
+// },2000)
 
 // nameArray2.forEach(function(value){
 //     domElement1.innerHTML += `${value}<br>`
 
 // })
+
+// basic 3
+const nameArrayEx3: Array<string> =["Ben", "Anakin","Bane","Mara","Kylo","Leia"];
+
+
+nameArrayEx3.forEach(function(value,i){
+    // console.log(`index ${i}`);
+    // console.log(`value ${value}`);
+    console.log(`Name ${value} at index ${i}`);
+})
