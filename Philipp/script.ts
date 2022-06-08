@@ -57,15 +57,15 @@ arrayOfStrings.forEach( function(value, index) {
 
 // ADVANCED
 
-type ingredient = {
+type Ingredient = {
   name: string,
   quantity: number,
   unit: string
 }
 
-const food: Array<ingredient> = [{name: "Water",quantity: 1, unit: "Liters"},{name: "Flour",quantity: 0.5, unit: "Kg"},{name: "Salt",quantity: 2, unit: "Teaspoons"}]
+const meal: ReadonlyArray<Ingredient> = [{name: "Water",quantity: 1, unit: "Liters"},{name: "Flour",quantity: 0.5, unit: "Kg"},{name: "Salt",quantity: 2, unit: "Teaspoons"}];
 
-food.forEach(dish => {
+meal.forEach(dish => {
   (document.querySelector(".custom-content") as HTMLElement).innerHTML += 
   `
   <hr>

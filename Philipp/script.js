@@ -51,8 +51,8 @@ console.log("Printing values and indices");
 arrayOfStrings.forEach(function (value, index) {
     console.log(`Array element ${value} with index ${index}`);
 });
-const food = [{ name: "Water", quantity: 1, unit: "Liters" }, { name: "Flour", quantity: 0.5, unit: "Kg" }, { name: "Salt", quantity: 2, unit: "Teaspoons" }];
-food.forEach(dish => {
+const meal = [{ name: "Water", quantity: 1, unit: "Liters" }, { name: "Flour", quantity: 0.5, unit: "Kg" }, { name: "Salt", quantity: 2, unit: "Teaspoons" }];
+meal.forEach(dish => {
     document.querySelector(".custom-content").innerHTML +=
         `
   <hr>
